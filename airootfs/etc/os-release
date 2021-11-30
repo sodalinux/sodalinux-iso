@@ -1,0 +1,10 @@
+NAME="Soda Linux"
+PRETTY_NAME="Soda Linux"
+ID=SL
+BUILD_ID=rolling
+ANSI_COLOR="0;31"
+HOME_URL="https://sodalinux.org"
+DOCUMENTATION_URL="https://sodalinux.org/docs"
+SUPPORT_URL="https://sodalinux.org/help"
+BUG_REPORT_URL="https://sodalinux.org/repo"
+
