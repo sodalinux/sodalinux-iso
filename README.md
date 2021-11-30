@@ -5,7 +5,7 @@ The official ISO profile for Soda Linux. This profile is intended to be used wit
 
 # FAQ
 
-- How do I use this?
+### How do I use this?
 
 You are required to have Arch Linux or an Arch-based derivative installed in order to build this ISO file.
 
@@ -19,7 +19,7 @@ After you cloned the repo, do `sudo aui-mkiso <directory>/sodalinux-iso` and wai
 
 The ISO should be located in a folder called `out` which contains both the ISO and a checksum file for the ISO. You should now have a full ISO built and ready to install.
 
-- What if I want to help make improvments?
+### What if I want to help make improvments?
 
 We are more than happy that you want to pitch in and help us make our ISO better!
 
