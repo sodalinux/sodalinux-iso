@@ -7,7 +7,7 @@ The official ISO profile for Soda Linux. This profile is intended to be used wit
 
 ### How do I use this?
 
-You are required to have Arch Linux or an Arch-based derivative installed in order to build this ISO file.
+**IMPORTANT: You are required to have Arch Linux or an Arch-based derivative installed in order to build this ISO file.**
 
 First, install [archuseriso](https://github.com/laurent85v/archuseriso) onto your system.
 
