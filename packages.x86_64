@@ -237,8 +237,7 @@ xorg-xwininfo
 ### Browser
 ##
 # Recommended
-#chromium
-firefox
+chromium
 
 ### Printing
 ##
@@ -281,7 +280,6 @@ vulkan-tools
 ### Additional packages
 ##
 # Required
-refind
 # Optional
 bash-completion
 binutils
