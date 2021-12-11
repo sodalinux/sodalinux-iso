@@ -130,31 +130,20 @@ epiphany
 feh
 ffmpegthumbnailer
 file-roller
-gnome-backgrounds
-gnome-calendar
-gnome-characters
-gnome-clocks
-gnome-contacts
-gnome-disk-utility
-gnome-font-viewer
-gnome-menus
-gnome-screenshot
-gnome-shell-extensions
-gnome-system-monitor
-gnome-terminal
-gnome-tweaks
-gnome-user-share
 gparted
 gst-libav
 gvfs-afc
 gvfs-mtp
 gvfs-smb
+gnome
+gnome-tweaks
+gdm
+gnome-software-packagekit-plugin
 intel-media-driver
 libva-intel-driver
 libva-mesa-driver
 libva-utils
 libva-vdpau-driver
-lightdm-gtk-greeter-settings
 lsb-release
 mesa-vdpau
 mobile-broadband-provider-info
@@ -187,20 +176,6 @@ xorg-xsetroot
 baobab
 fprintd
 gedit-plugins
-gnome-calculator
-gnome-dictionary
-gnome-documents
-gnome-logs
-gnome-maps
-gnome-music
-gnome-notes
-gnome-packagekit
-gnome-photos
-gnome-remote-desktop
-gnome-software-packagekit-plugin
-gnome-todo
-gnome-user-docs
-gnome-weather
 gsmartcontrol
 gvfs-google
 gvfs-gphoto2
@@ -239,10 +214,6 @@ xorg-xwininfo
 # Recommended
 chromium
 
-### Printing
-##
-# Optional
-cups-pdf cups-pk-helper
 
 ### Nvidia graphics driver
 ##
@@ -252,7 +223,6 @@ cups-pdf cups-pk-helper
 ### Office
 ##
 # Optional
-abiword gnumeric
 #hunspell-en_US libreoffice-fresh
 #hunspell-en_US libreoffice-still
 

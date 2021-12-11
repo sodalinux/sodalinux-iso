@@ -1,6 +1,6 @@
 # sodalinux-iso
 
-The official ISO profile for Soda Linux. This profile is intended to be used with [archuseriso.](https://github.com/laurent85v/archuseriso) We will be replacing the tool we use soon with the official archiso method
+The official ISO profile for Soda Linux. This profile is intended to be used with [archiso.](https://github.com/archlinux/archiso) 
 
 
 # FAQ
@@ -9,15 +9,25 @@ The official ISO profile for Soda Linux. This profile is intended to be used wit
 
 **IMPORTANT: You are required to have Arch Linux or an Arch-based derivative installed in order to build this ISO file.**
 
-First, install [archuseriso](https://github.com/laurent85v/archuseriso) onto your system.
+First, install [archiso](https://github.com/archlinux/archiso) onto your system.
 
-After [archuseriso](https://github.com/laurent85v/archuseriso) is installed, clone this repo using:
+```
+sudo pacman -S archiso
+```
 
-`git clone https://github.com/sodalinux/sodalinux-iso`
+After archiso is installed, clone this repo using:
 
-After you cloned the repo, do `sudo aui-mkiso <directory>/sodalinux-iso` and wait a few moments.
+```
+git clone https://github.com/sodalinux/sodalinux-iso
+```
 
-The ISO should be located in a folder called `out` which contains both the ISO and a checksum file for the ISO. You should now have a full ISO built and ready to install.
+After you cloned the repo, `cd` into the directory, and run `./build.sh` and wait a few moments.
+
+A bunch of text will appear on screen for the remainder of the ISO building process. Don't freak out, this is just the script working it's magic.
+
+If the ISO building process at anytime stops due to an error, please open up a issue in the repo.
+
+If all goes well, the ISO should be located in a folder called `out` which contains the ISO file. You should now have a full ISO built and ready to install.
 
 ### What if I want to help make improvments?
 
