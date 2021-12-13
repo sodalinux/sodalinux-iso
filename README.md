@@ -21,11 +21,11 @@ After archiso is installed, clone this repo using:
 git clone https://github.com/sodalinux/sodalinux-iso
 ```
 
-After you cloned the repo, `cd` into the directory, and run `./build.sh` and wait a few moments.
+After you've cloned the repo, `cd` into the directory, and run `./build.sh` and wait a few moments.
 
-A bunch of text will appear on screen for the remainder of the ISO building process. Don't freak out, this is just the script working it's magic.
+A bunch of text will appear on screen for the remainder of the ISO building process. Don't freak out, this is just the script working its magic.
 
-If the ISO building process at anytime stops due to an error, please open up a issue in the repo.
+If the ISO building process at anytime stops due to an error, please open up an issue in the repo.
 
 If all goes well, the ISO should be located in a folder called `out` which contains the ISO file. You should now have a full ISO built and ready to install.
 
