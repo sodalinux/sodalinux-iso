@@ -52,6 +52,9 @@ rm /usr/share/backgrounds/default.png
 # change file permissions for neofetch because idk
 chmod +x /usr/bin/neofetch
 
+# change file permissions for alci-displaymanager-check script, fml
+chmod +x /usr/local/bin/alci-displaymanager-check
+
 
 # Add live user
 # * groups member

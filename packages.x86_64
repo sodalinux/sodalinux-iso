@@ -114,6 +114,10 @@ xfsprogs
 xl2tpd
 zsh
 
+# installer
+alci-calamares
+alci-calamares-config
+
 # Live environment base packages
 acpi
 acpid
