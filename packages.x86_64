@@ -115,8 +115,8 @@ xl2tpd
 zsh
 
 # installer
-alci-calamares
-alci-calamares-config
+soda-calamares
+soda-calamares-config
 
 # Live environment base packages
 acpi
