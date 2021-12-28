@@ -1,6 +1,0 @@
-#!/bin/bash
-# enable gdm on boot 
-
-# apparently this is required by alci but isn't included for some stupid reason
-# so im including it here
-ln -sf /usr/lib/systemd/system/gdm.service /etc/systemd/system/display-manager.service

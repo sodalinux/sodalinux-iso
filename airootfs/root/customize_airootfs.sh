@@ -52,9 +52,9 @@ rm /usr/share/backgrounds/default.png
 # change file permissions for neofetch because idk
 chmod +x /usr/bin/neofetch
 
-# change file permissions for alci-displaymanager-check script, fml
-chmod +x /usr/local/bin/alci-displaymanager-check
+# also change file permissions for post install script
 
+chmod +x /usr/local/bin/post-install
 
 # Add live user
 # * groups member
@@ -66,6 +66,16 @@ sed -i 's/^#\s\(%wheel\s.*NOPASSWD\)/\1/' /etc/sudoers
 
 # edit lsb-release to reflect os name on things like neofetch
 sed -i 's/DISTRIB_DESCRIPTION="Arch Linux"/DISTRIB_DESCRIPTION="Soda Linux"/g' /etc/lsb-release
+
+# edit pacman.conf to enable some nice QoL features
+sed -i /etc/pacman.conf \
+        -e '/^#Color/a ILoveCandy' \
+        -e 's|^#Color|Color|' \
+        -e 's|^#VerbosePkgLists|VerbosePkgLists|' \
+        -e 's|^#ParallelDownloads|ParallelDownloads|' \
+
+# enable multilib repo in pacman because why not
+sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
 
 # Create autologin group
 # add live to autologin group

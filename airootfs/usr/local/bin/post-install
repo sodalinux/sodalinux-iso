@@ -1,0 +1,16 @@
+#!/bin/sh
+
+rm /etc/sudoers.d/g_wheel
+rm -r /etc/systemd/system/getty@tty1.service.d
+rm /etc/systemd/system/etc-pacman.d-gnupg.mount
+rm /root/.automated_script.sh
+rm /root/.zlogin
+rm /root/customize_airootfs.sh
+rm /etc/polkit-1/rules.d/49-nopasswd_global.rules
+rm /etc/polkit-1/rules.d/49-nopasswd-calamares.rules
+rm /etc/systemd/system/display-manager.service
+rm /etc/gdm/custom.conf
+rm /etc/motd
+ln -sf /usr/lib/systemd/system/gdm.service /etc/systemd/system/display-manager.service
+sed -i 's/GRUB_DISTRIBUTOR="Arch"/GRUB_DISTRIBUTOR="Soda"/g' /etc/default/grub
+update-grub

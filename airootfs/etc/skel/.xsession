@@ -1,7 +1,5 @@
 #!/bin/sh
 
-# Default X wallpaper
-~/.fehbg
 
 # solft link to embeded data dir if any
 if [ -d /run/archiso/bootmnt/data ] && [ -f ~/.firstboot ]; then

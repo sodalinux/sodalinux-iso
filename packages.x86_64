@@ -5,6 +5,7 @@ arch-install-scripts
 archinstall
 b43-fwcutter
 base
+base-devel
 bind-tools
 broadcom-wl
 btrfs-progs
@@ -115,8 +116,14 @@ xl2tpd
 zsh
 
 # installer
+mkinitcpio-openswap
+ckbcomp
 soda-calamares
 soda-calamares-config
+
+# install yay because why not
+yay
+update-grub
 
 # Live environment base packages
 acpi
@@ -127,7 +134,6 @@ bluez-tools
 bluez-utils
 eog
 epiphany
-feh
 ffmpegthumbnailer
 file-roller
 gparted
@@ -139,6 +145,8 @@ gnome
 gnome-tweaks
 gdm
 gnome-software-packagekit-plugin
+archlinux-appstream-data
+flatpak
 intel-media-driver
 libva-intel-driver
 libva-mesa-driver
@@ -222,6 +230,9 @@ vulkan-tools
 # QoL tools and utilities
 bash-completion
 binutils
+cups
+cups-pdf
+cups-pk-helper
 byobu
 cpio
 cpupower
