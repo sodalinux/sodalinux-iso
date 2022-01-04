@@ -2,7 +2,7 @@
 # shellcheck disable=SC2034
 
 iso_name="sodalinux"
-iso_label="SL_$(date +%Y%m)"
+iso_label="Soda_$(date +%Y%m)"
 iso_publisher="Soda Linux Project"
 iso_application="Soda Linux Live/Rescue CD"
 iso_version="$(date +%Y.%m.%d)"
@@ -11,9 +11,8 @@ buildmodes=('iso')
 bootmodes=('bios.syslinux.mbr' 'bios.syslinux.eltorito' 'uefi-x64.systemd-boot.esp' 'uefi-x64.systemd-boot.eltorito')
 arch="x86_64"
 pacman_conf="pacman.conf"
-pacman_testing_conf="pacman-testing.conf"
 airootfs_image_type="squashfs"
-airootfs_image_tool_options=('-comp' 'zstd')
+airootfs_image_tool_options=('-comp' 'xz' '-Xdict-size' '100%' '-always-use-fragments' '-noappend')
 file_permissions=(
   ["/etc/shadow"]="0:0:400"
   ["/root"]="0:0:750"

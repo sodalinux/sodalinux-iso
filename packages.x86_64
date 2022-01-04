@@ -121,23 +121,23 @@ ckbcomp
 soda-calamares
 soda-calamares-config
 
-# install yay because why not
+# custom packages
 yay
 update-grub
+graphite-gtk-theme
+papirus-icon-theme-red-folders
+xcursor-simp1e
+neofetch-git
 
 # Live environment base packages
 acpi
 acpid
-alsa-firmware
 aspell-en
 bluez-tools
 bluez-utils
 eog
-epiphany
-ffmpegthumbnailer
 file-roller
 gparted
-gst-libav
 gvfs-afc
 gvfs-mtp
 gvfs-smb
@@ -158,15 +158,9 @@ mobile-broadband-provider-info
 mousetweaks
 network-manager-applet
 nss-mdns
-pavucontrol
 polkit-gnome
-pulseaudio-bluetooth
-pulseaudio-zeroconf
 samba
 totem
-ttf-droid
-ttf-hack
-vdpauinfo
 xdg-user-dirs-gtk
 xf86-input-evdev
 xf86-video-amdgpu
@@ -175,22 +169,27 @@ xf86-video-nouveau
 xf86-video-vesa
 xorg-mkfontscale
 xorg-server
-xorg-xdpyinfo
-xorg-xdriinfo
 xorg-xinit
 xorg-xinput
 xorg-xsetroot
 
+# Live environment sound
+alsa-firmware
+pipewire-pulse
+pipewire-media-session
+pipewire-alsa
+pipewire-jack
+gst-libav
+gst-plugin-pipewire
+
+
 # Live environment extras
-baobab
 fprintd
 gedit-plugins
 gsmartcontrol
 gvfs-google
 gvfs-gphoto2
 gvfs-nfs
-hexchat
-jre-openjdk
 mesa-demos
 nautilus-image-converter
 networkmanager-openconnect
@@ -199,24 +198,14 @@ networkmanager-pptp
 networkmanager-vpnc
 numlockx
 orca
-rygel
 seahorse
 seahorse-nautilus
-simple-scan
 sushi
 system-config-printer
 vino
 xf86-input-elographics
 xf86-input-void
 xf86-input-wacom
-xorg-twm
-xorg-xgamma
-xorg-xhost
-xorg-xkill
-xorg-xlsclients
-xorg-xrefresh
-xorg-xvinfo
-xorg-xwininfo
 chromium
 
 # Vulkan 
@@ -233,7 +222,6 @@ binutils
 cups
 cups-pdf
 cups-pk-helper
-byobu
 cpio
 cpupower
 cryfs
@@ -241,7 +229,6 @@ dmidecode
 fakeroot
 git
 grub
-grsync
 hddtemp
 hwinfo
 net-tools
@@ -257,4 +244,3 @@ wget
 whois
 wireguard-tools
 zip
-zsh-autosuggestions

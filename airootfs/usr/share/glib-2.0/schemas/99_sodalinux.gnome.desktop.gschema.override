@@ -1,0 +1,19 @@
+[org.gnome.desktop.background]
+picture-uri = 'file:///usr/share/backgrounds/default.png'
+
+[org.gnome.desktop.interface]
+cursor-theme='Simp1e'
+gtk-theme='Graphite-red-light'
+icon-theme='Papirus'
+
+[org.gnome.desktop.wm.preferences]
+titlebar-uses-system-font=false
+button-layout='appmenu:minimize,maximize,close'
+focus-mode='click'
+
+[org.gnome.shell]
+favorite-apps=['chromium.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Software.desktop']
+enabled-extensions = ['user-theme@gnome-shell-extensions.gcampax.github.com']
+
+[org.gnome.shell.extensions.user-theme]
+name='Graphite-red-light'

@@ -16,14 +16,6 @@ sed -i '/^hosts:/ {
         s/\(resolve\)/mdns_minimal \[NOTFOUND=return\] \1/
         s/\(dns\)$/\1 wins/ }' /etc/nsswitch.conf
 
-# Force wayland session type (related to Nvidia proprietary driver)
-sed -i 's|^\(Exec=\).*|\1env XDG_SESSION_TYPE=wayland /usr/bin/gnome-session|' /usr/share/xsessions/gnome.desktop
-
-# Remove duplicate from lightdm sessions type list
-mv /usr/share/wayland-sessions/gnome.desktop{,.duplicate}
-
-# missing link pointing to default vncviewer
-ln -s /usr/bin/gvncviewer /usr/local/bin/vncviewer
 
 # Enable service when available
 { [[ -e /usr/lib/systemd/system/acpid.service                ]] && systemctl enable acpid.service;
@@ -43,17 +35,11 @@ ln -s /usr/lib/systemd/system/gdm.service /etc/systemd/system/display-manager.se
 # Set default target so Arch doesnt shit itself when it boots using BIOS mode
 systemctl set-default graphical.target
 
-# Set default background because why not (we have to get a little hacky for this one)
-cp -f /usr/share/backgrounds/default.png /usr/share/backgrounds/gnome/adwaita-day.png
-cp -f /usr/share/backgrounds/default.png /usr/share/backgrounds/gnome/adwaita-morning.png
-cp -f /usr/share/backgrounds/default.png /usr/share/backgrounds/gnome/adwaita-night.png
-rm /usr/share/backgrounds/default.png
+# compile glib schemas for desktop customization
+glib-compile-schemas /usr/share/glib-2.0/schemas/
 
-# change file permissions for neofetch because idk
-chmod +x /usr/bin/neofetch
 
-# also change file permissions for post install script
-
+# change file permissions for post install script
 chmod +x /usr/local/bin/post-install
 
 # Add live user
