@@ -63,10 +63,10 @@ sed -i /etc/pacman.conf \
 # enable multilib repo in pacman because why not
 sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
 
-# Create autologin group
-# add live to autologin group
-groupadd -r autologin
-gpasswd -a live autologin
+# build pacman keys because arch requires it now
+pacman-key --init
+pacman-key --populate archlinux
+
 
 # disable systemd-networkd.service
 # we have NetworkManager for managing network interfaces

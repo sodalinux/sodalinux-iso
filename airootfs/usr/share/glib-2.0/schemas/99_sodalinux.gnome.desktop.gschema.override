@@ -2,9 +2,11 @@
 picture-uri = 'file:///usr/share/backgrounds/default.png'
 
 [org.gnome.desktop.interface]
+clock-format='12h'
+clock-show-weekday=true
 cursor-theme='Simp1e'
-gtk-theme='Graphite-red-light'
-icon-theme='Papirus'
+gtk-theme='Orchis-Soda'
+icon-theme='Papirus-Soda'
 
 [org.gnome.desktop.wm.preferences]
 titlebar-uses-system-font=false
@@ -13,7 +15,7 @@ focus-mode='click'
 
 [org.gnome.shell]
 favorite-apps=['chromium.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Software.desktop']
-enabled-extensions = ['user-theme@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions = ['user-theme@gnome-shell-extensions.gcampax.github.com', 'dash-to-panel@jderose9.github.com', 'gamemode@christian.kellner.me', 'arcmenu@arcmenu.com']
 
 [org.gnome.shell.extensions.user-theme]
-name='Graphite-red-light'
+name='Orchis-Soda'
