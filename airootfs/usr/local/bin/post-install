@@ -11,7 +11,5 @@ rm /etc/polkit-1/rules.d/49-nopasswd-calamares.rules
 rm /etc/systemd/system/display-manager.service
 rm /etc/gdm/custom.conf
 rm /etc/motd
-rm /usr/share/glib-2.0/schemas/99_sodalinux.gnome.desktop.gschema.override
 ln -sf /usr/lib/systemd/system/gdm.service /etc/systemd/system/display-manager.service
-sed -i 's/GRUB_DISTRIBUTOR="Arch"/GRUB_DISTRIBUTOR="Soda"/g' /etc/default/grub
-update-grub
+

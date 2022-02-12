@@ -117,25 +117,28 @@ xl2tpd
 zsh
 
 # installer
-mkinitcpio-openswap
 ckbcomp
+mkinitcpio-openswap
 soda-calamares
 soda-calamares-config
 
 # custom packages
-yay
-update-grub
+gamemode
+gnome-shell-extension-gamemode-git
+gnome-shell-extension-appindicator
+gnome-shell-extension-sound-output-device-chooser
+lib32-gamemode
+neofetch-git
+octopi
 orchis-soda
 papirus-soda
-xcursor-simp1e
-neofetch-git
-gnome-shell-extension-gamemode-git
+plymouth-git
+qgnomeplatform
 soda-panel
 soda-arcmenu
-gamemode
-lib32-gamemode
-octopi
-qgnomeplatform
+update-grub
+xcursor-simp1e
+yay
 
 # Live environment base packages
 acpi
@@ -148,7 +151,7 @@ file-roller
 gparted
 gnome
 gnome-tweaks
-gdm
+gdm-plymouth
 gnome-software-packagekit-plugin
 archlinux-appstream-data
 flatpak

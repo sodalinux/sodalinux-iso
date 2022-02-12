@@ -25,22 +25,19 @@ sed -i '/^hosts:/ {
   [[ -e /usr/lib/systemd/system/nmb.service                  ]] && systemctl enable nmb.service;
   [[ -e /usr/lib/systemd/system/cups.service                 ]] && systemctl enable cups.service;
   [[ -e /usr/lib/systemd/system/smb.service                  ]] && systemctl enable smb.service;
+  [[ -e /usr/lib/systemd/system/gdm.service                  ]] && systemctl enable gdm.service;
   [[ -e /usr/lib/systemd/system/systemd-timesyncd.service    ]] && systemctl enable systemd-timesyncd.service;
   [[ -e /usr/lib/systemd/system/winbind.service              ]] && systemctl enable winbind.service;
 } > /dev/null 2>&1
 
-# Set gdm.service to be the default display manager
-ln -s /usr/lib/systemd/system/gdm.service /etc/systemd/system/display-manager.service
-
-# Set default target so Arch doesnt shit itself when it boots using BIOS mode
-systemctl set-default graphical.target
-
 # compile glib schemas for desktop customization
 glib-compile-schemas /usr/share/glib-2.0/schemas/
 
-
 # change file permissions for post install script
 chmod +x /usr/local/bin/post-install
+
+# move watermark from temp dir to plymouth theme
+mv /usr/share/icons/watermark.png /usr/share/plymouth/themes/spinner/
 
 # Add live user
 # * groups member
